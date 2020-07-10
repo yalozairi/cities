@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 // Styles
 import { Title } from "./styles";
-// Data
-import cities from "./cities";
+
 // Components
 import CityList from "./Components/CityList";
 import CityDetail from "./Components/CityDetail";
