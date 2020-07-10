@@ -1,26 +1,36 @@
 import React from "react";
 import cities from "../cities";
 
+const Recommendations = ({ city }) => {
+  let recommendedA, recommendedB, recommendedC;
 
-const Recommendations = ({city}) => {
-    let recommended;
-
-    for (let i=0; i<cities.length; i++) {
-        if (cities[i]=== city.recommendedCities[0]) {
-            recommended=cities[city.recommendedCities[0]]
-        } else if (cities[i]=== city.recommendedCities[1]) {
-            recommended=cities[city.recommendedCities[1]]
-        } else if (cities[i]=== city.recommendedCities[2]) {
-            recommended=cities[city.recommendedCities[2]]
-        };
-    };
-   
+  for (let i = 0; i < cities.length; i++) {
+    if (cities[i].id === city.recommendedCities[0]) {
+      recommendedA = cities[i];
+    }
+    if (cities[i].id === city.recommendedCities[1]) {
+      recommendedB = cities[i];
+    }
+    if (cities[i].id === city.recommendedCities[2]) {
+      recommendedC = cities[i];
+    }
+  }
   return (
-      <>
-    <h1>{city.recommendedSentence}</h1>
-    <h2>{recommended.name}</h2>
-    <img src={recommended.image}/>
-    </>
-  )
+    <div>
+      <div>
+        <h1>{city.recommendedSentence}</h1>
+        <h1>{recommendedA.name}</h1>
+        <img src={recommendedA.image} />
+      </div>
+      <div>
+        <h1>{recommendedB.name}</h1>
+        <img src={recommendedB.image} />
+      </div>
+      <div>
+        <h1>{recommendedC.name}</h1>
+        <img src={recommendedC.image} />
+      </div>
+    </div>
+  );
 };
 export default Recommendations;
