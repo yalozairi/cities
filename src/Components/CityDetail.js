@@ -20,6 +20,7 @@ const CityDetail = ({ city }) => {
             src={city.googleMap}
             width={600}
             height={450}
+            title={"Map"}
             // frameborder={0}
             // style={"border:0"}
             // allowfullscreen=""
@@ -27,12 +28,31 @@ const CityDetail = ({ city }) => {
             // tabindex={0}
             alt={city.name}
           ></iframe>
+<div>
+  <h1>These are the top three {city.name} attractions!</h1>
+<h2>{city.attractions[0].name}</h2>
+<h3>{city.attractions[0].description}</h3>
+<img src={city.attractions[0].image} alt={city.attractions[0].name}/>
+
+<h2>{city.attractions[1].name}</h2>
+<h3>{city.attractions[1].description}</h3>
+<img src={city.attractions[1].image} alt={city.attractions[1].name}/>
+
+<h2>{city.attractions[2].name}</h2>
+<h3>{city.attractions[2].description}</h3>
+<img src={city.attractions[2].image} alt={city.attractions[2].name}/>
+
+</div>
+
+
         </div>
       </DetailWrapper>
       <br />
-      <div>
+     
+        <DetailWrapper>
         <Recommendations city={city} />
-      </div>
+        </DetailWrapper>
+     
     </>
   );
 };

@@ -57,7 +57,7 @@ const cities = [
     timeZone: "JST",
     recommendedSentence: "If you like unique big cities, check these out:",
     recommendedCities: [6, 7, 5],
-    googleMap: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326606.5311178067!2d137.52630650667987!3d35.488469958308755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2skw!4v1594367725185!5m2!1sen!2skw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+    googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326606.5311178067!2d137.52630650667987!3d35.488469958308755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2skw!4v1594367725185!5m2!1sen!2skw",
     attractions: [
       {
         name: "Toyo Skytree",
@@ -76,7 +76,7 @@ const cities = [
       },
       {
         name: "Meiji Jingu",
-        image: "",
+        image: "https://travel.gaijinpot.com/app/uploads/sites/6/2019/05/Meiji-Jingu-2.jpg",
         description:
           "Meiji Shrine, located in Shibuya, Tokyo, is the Shinto shrine that is dedicated to the deified spirits of Emperor Meiji and his wife, Empress Shōken. The shrine does not contain the emperor's grave, which is located at Fushimi-momoyama, south of Kyoto.",
         target: "Tourists",
@@ -97,7 +97,7 @@ const cities = [
     timeZone: "GST",
     recommendedSentence: "If you like popular big cities, check these out:",
     recommendedCities: [4, 5, 1],
-    googleMap: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462565.197581445!2d54.94755498654818!3d25.075085310621684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2skw!4v1594368771843!5m2!1sen!2skw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+    googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462565.197581445!2d54.94755498654818!3d25.075085310621684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2skw!4v1594368771843!5m2!1sen!2skw",
     attractions: [
       {
         name: "Burj Khalifa",
@@ -139,20 +139,19 @@ const cities = [
     timeZone: "EDT",
     recommendedSentence: "If you like popular big cities, check these out:",
     recommendedCities: [3, 5, 1],
-    googleMap: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2skw!4v1594370061626!5m2!1sen!2skw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+    googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2skw!4v1594370061626!5m2!1sen!2skw",
     attractions: [
       {
         name: "Central Park",
         image:
-          "https://lh6.googleusercontent.com/proxy/G3XoiF_c0LjypR2_Yo6NAaIxHiOPadUhUX-SLZ2qM5euE0b_ZDRrxr92yRk68VmVzFSHq3CjydY4K19c5YR05bqGdAndHOmtVtgZ0_fyDEjs8W_oblet5HWAzrsoZ4pjUbGzYRaHvlKdYeAKX3BUwDZsv2lhCGovvr-Fx-BsG2KA=w296-h202-n-k-no",
-        description:
+"https://static.toiimg.com/photo/71317500.cms",        description:
           "Central Park is an urban park in New York City, located between the Upper West and Upper East Sides of Manhattan. It is the fifth-largest park in the city by area, covering 843 acres. The park is the most visited urban park in the United States, with an estimated 38 million visitors annually, and is the most filmed location in the world. Following proposals for a large park in Manhattan during the 1840s, it was approved in 1853 to cover 778 acres. In 1857, the landscape architects Frederick Law Olmsted and Calvert Vaux won a design competition for the park with their 'Greensward Plan'. Construction began the same year, and the park's first areas were opened to the public in late 1858. Additional land at the northern end of Central Park was purchased in 1859, and the park was completed in 1876. After a period of decline in the early 20th century, New York City parks commissioner Robert Moses started a program to clean up Central Park. The Central Park Conservancy, created in 1980 to combat further deterioration in the late 20th century, refurbished many parts of the park during the 1980s and 1990s.",
         target: "Families",
       },
       {
         name: "The Statue of Liberty",
         image:
-          "https://lh3.googleusercontent.com/proxy/jwy6_SG55FDIWnbV9eyRTHkPNzVhN7m8FIoXbyIJhmwoGUrzlCvaw6LgAam4dni8snp3ICAdy8QKTNZMQY9bQheJOj0T_Qx5sZnEZ9ZOBGWLtpYd0OoboqQu27zs1y8oOo-CIW3TlI9s_1K9PIZykkQt_rA3bLFmKby_i4Y4nWFP=w296-h202-n-k-no",
+          "https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTY1MTc1MTk3ODI0MDAxNjA5%2Ftopic-statue-of-liberty-gettyimages-960610006-promo.jpg",
         description:
           "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor within New York City, in the United States. The copper statue, a gift from the people of France to the people of the United States, was designed by French sculptor Frédéric Auguste Bartholdi and its metal framework was built by Gustave Eiffel. The statue was dedicated on October 28, 1886. The statue is a figure of Libertas, a robed Roman liberty goddess. She holds a torch above her head with her right hand, and in her left hand carries a tabula ansata inscribed JULY IV MDCCLXXVI, the date of the U.S. Declaration of Independence. A broken shackle and chain lie at her feet as she walks forward, commemorating the recent national abolition of slavery. After its dedication, the statue became an icon of freedom and of the United States, seen as a symbol of welcome to immigrants arriving by sea. Bartholdi was inspired by a French law professor and politician, Édouard René de Laboulaye, who is said to have commented in 1865 that any monument raised to U.S. independence would properly be a joint project of the French and U.S. peoples.",
         target: "Tourists",
@@ -160,7 +159,7 @@ const cities = [
       {
         name: "The Empire State Building",
         image:
-          "https://lh5.googleusercontent.com/proxy/AOqeQFLXgTqF9KzV-nR3kx7cPAbT6ATTgkdvRnbsmNlUx8DGsHYD2PuGXSxPc9OaOLOl30aehyjo-frT9YvXTBUBU3RPk-cisqxXhdKB5LM9q3NtLhJpmJgdkm92dT4KaDtJpRH_jeoygDjrs6bUuBVzEZ7Jk8piZXY3KyCFqPMa=w296-h202-n-k-no",
+          "https://untappedcities.com/wp-content/uploads/2015/07/Flatiron-Building-Secrets-Roof-Basement-Elevator-Sonny-Atis-GFP-NYC_5.jpg",
         description:
           "The Empire State Building is a 102-story Art Deco skyscraper in Midtown Manhattan in New York City. It was designed by Shreve, Lamb & Harmon and built from 1930 to 1931. Its name is derived from Empire State, the nickname of the state of New York. The building has a roof height of 1,250 feet and stands a total of 1,454 feet tall, including its antenna. The Empire State Building stood as the world's tallest building until the construction of the World Trade Center in 1970; following its collapse in the September 11, 2001 attacks, the Empire State Building was again the city's tallest skyscraper until 2012. As of 2020, the building is the seventh-tallest building in New York City, the ninth-tallest completed skyscraper in the United States, the 48th-tallest in the world, and the fifth-tallest freestanding structure in the Americas. The site of the Empire State Building, located in Midtown South on the west side of Fifth Avenue between West 33rd and 34th Streets, was originally part of an early 18th-century farm. It was developed in 1893 as the site of the Waldorf–Astoria Hotel. In 1929, Empire State Inc. acquired the site and devised plans for a skyscraper there.",
         target: "Tourists",
@@ -182,12 +181,12 @@ const cities = [
     timeZone: "HKT",
     recommendedSentence: "If you like unique big cities, check these out:",
     recommendedCities: [6, 7, 2],
-    googleMap: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472323.8860633225!2d113.8475072266474!3d22.352482475031337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403e2eda332980f%3A0xf08ab3badbeac97c!2sHong%20Kong!5e0!3m2!1sen!2skw!4v1594370478051!5m2!1sen!2skw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+    googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472323.8860633225!2d113.8475072266474!3d22.352482475031337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403e2eda332980f%3A0xf08ab3badbeac97c!2sHong%20Kong!5e0!3m2!1sen!2skw!4v1594370478051!5m2!1sen!2skw",
     attractions: [
       {
         name: "Victoria Peak",
         image:
-          "https://lh4.googleusercontent.com/proxy/P7ke6lZRrDy1aH3npLHoYhZ-jXe1TH2ycNrT4sumYQY_oMp9ju4NCati59m_h26ualt400gMeaKZlnKK5bms3V3DtmfKZEbe8U-5FOEl7XWD9cMUVYURpY1dEAn1QxvLNVdcsPhDCYZI5CXNN0L2b35247oXXE2t-OoaOyCXDESG=w296-h202-n-k-no",
+          "https://www.chinatouradvisors.com//UpLoad/HongKong/Victoria-Peak/Victoria-Peak-02.jpg",
         description:
           "Victoria Peak is a hill on the western half of Hong Kong Island. It is also known as Mount Austin, and locally as The Peak. With an elevation of 552 m, it is the highest hill on Hong Kong island, ranked 31 in terms of elevation in the Hong Kong Special Administrative Region. The summit is occupied by a radio telecommunications facility and is closed to the public. However, the surrounding area of public parks and high-value residential land is the area that is normally meant by the name The Peak. It is a major tourist attraction that offers views of Central, Victoria Harbour, Lamma Island, and the surrounding islands.",
         target: "Tourists",
@@ -195,7 +194,7 @@ const cities = [
       {
         name: "Hong Kong Disneyland",
         image:
-          "https://lh4.googleusercontent.com/proxy/zA6VwNBJLmuSRNd9E-OLpuNFnZ4trztV2KTfWL_c6h7oXJAWDKJ79iSQGgj4A9gg727ZBfjpKAbMbHV1HEjqQIPtUBdexfSP7gwM9V8gTBCidgXmpnrOKywR1kWdWp4G2qkOK1ugccyqmU4Q3YhUhHAPH9H0KWXTYilSnkRia7M2=w296-h202-n-k-no",
+          "https://www.welcomepickups.com/wp-content/uploads/2017/10/hong-kong-disneyland-resort.jpg",
         description:
           "Hong Kong Disneyland is a theme park located on reclaimed land in Penny's Bay, Lantau Island. It is located inside the Hong Kong Disneyland Resort and it is owned and managed by Hong Kong International Theme Parks. It is the largest theme park in Hong Kong, followed by Ocean Park Hong Kong. Hong Kong Disneyland was opened to visitors on Monday, 12 September 2005 at 13:00 HKT. Disney attempted to avoid problems of cultural backlash by incorporating Chinese culture, customs and traditions when designing and building the resort, including adherence to the rules of feng shui. Notably, a bend was put in a walkway near the Hong Kong Disneyland Resort entrance so good qi energy would not flow into the South China Sea.",
         target: "Families",
@@ -203,7 +202,7 @@ const cities = [
       {
         name: "Victoria Harbour",
         image:
-          "https://lh6.googleusercontent.com/proxy/3a71-haz65-0ntrN5vOoExwiY4l1OEHn_gweAeQ162skL8SIr-kEB2Lw5TTuylOtl4-kqwu29-jeJ5_V2YcWfYkVKfrijSc7XbFY_VkwKijShX2PNC5t4ehpYi6wglcDlBvmDO7Afdem1BQL_UUcYwf_KMjYTxX5dph7JcRZo7Iq=w296-h202-n-k-no",
+          "https://www.tripsavvy.com/thmb/nYEPB-8WKlFpB5FKGuZGZ58Y8mQ=/2106x1185/smart/filters:no_upscale()/GettyImages-586892388-5c7b646fc9e77c0001d19d3b.jpg",
         description:
           "Victoria Harbour is a natural landform harbour separating Hong Kong Island in the south from the Kowloon Peninsula to the north. The harbour's deep, sheltered waters and strategic location on the South China Sea were instrumental in Hong Kong's establishment as a British colony and its subsequent development as a trading centre. Throughout its history, the harbour has seen numerous reclamation projects undertaken on both shores, many of which have caused controversy in recent years. Environmental concerns have been expressed about the effects of these expansions, in terms of water quality and loss of natural habitat. It has also been proposed that benefits of land reclamation may be less than the effects of decreased harbour width, affecting the number of vessels passing through the harbour. Nonetheless Victoria Harbour still retains its founding role as a port for thousands of international vessels each year. The harbour is a major tourist attraction of Hong Kong. Lying in the middle of the territory's dense urban region, the harbour is the site of annual fireworks displays and its promenades are used as gathering places for tourists and residents.",
         target: "Tourists",
@@ -225,12 +224,12 @@ const cities = [
     timeZone: "CST",
     recommendedSentence: "If you like unique big cities, check these out:",
     recommendedCities: [5, 7, 2],
-    googleMap: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d873449.7819148405!2d120.91629749245475!3d31.22313380601164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b27040b1f53c33%3A0x295129423c364a1!2sShanghai%2C%20China!5e0!3m2!1sen!2skw!4v1594371203735!5m2!1sen!2skw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+    googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d873449.7819148405!2d120.91629749245475!3d31.22313380601164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b27040b1f53c33%3A0x295129423c364a1!2sShanghai%2C%20China!5e0!3m2!1sen!2skw!4v1594371203735!5m2!1sen!2skw",
     attractions: [
       {
         name: "The Bund",
         image:
-          "https://lh5.googleusercontent.com/proxy/T12Dq2I8HoXiYutIY7Y0viMVK62g-O2z5kjLF1940i9-YzApAbkQBtiDjJjyekBWLPWnG3WP88C-XGLDFGA-naEx7R0-EPQP02IYx-Kl3up0qxVJ0ZUWUK9mAEzpTjNw74vHdaF6liEsucAJW6qDLF-D0xOwfsMniXA9igGGzJHG=w296-h202-n-k-no",
+          "https://q-cf.bstatic.com/images/hotel/max1024x768/128/128389230.jpg",
         description:
           "The Bund or Waitan is a waterfront area in central Shanghai. The area centers on a section of Zhongshan Road within the former Shanghai International Settlement, which runs along the western bank of the Huangpu River in the eastern part of Huangpu District. The area along the river faces the modern skyscrapers of Lujiazui in the Pudong District. The Bund usually refers to the buildings and wharves on this section of the road, as well as some adjacent areas. From the 1860s to the 1930s, it was the rich and powerful center of the foreign establishment in Shanghai, operating as a legally protected treaty port.",
         target: "Tourists",
@@ -238,7 +237,7 @@ const cities = [
       {
         name: "Yu Garden",
         image:
-          "https://lh5.googleusercontent.com/proxy/0lJHKN9Dl6sLUS7wvR6OgXXYzxMBZ6Iiq6rsuNF8aySZzcBGlhN8BcWi4TdyAo_YAJSxKLaTd0CcVp_JmS5KnVPiS4RItTNsdqupmo5iRq5ljgE2uORnhbHx93zIV06cpxcyEa6KDCCldqEElTxzcvSdjm1RnXUdn9sp7-ND7F1i=w296-h202-n-k-no",
+          "https://media.tacdn.com/media/attractions-splice-spp-674x446/09/de/b3/34.jpg",
         description:
           "Yu Garden or Yuyuan Garden is an extensive Chinese garden located beside the City God Temple in the northeast of the Old City of Shanghai at Huangpu Qu, Shanghai Shi. It abuts the Yuyuan Tourist Mart, the Huxinting Teahouse and the Yu Garden Bazaar. This garden is accessible from the Shanghai Metro's Line 10 Yuyuan Garden Station. A centerpiece is the Exquisite Jade Rock a porous 3.3-m, 5-ton boulder. Rumours about its origin include the story that it was meant for the Huizong Emperor at the imperial palace in Beijing, but was salvaged from the Huangpu River after the boat carrying it had sunk.",
         target: "Tourists",
@@ -246,7 +245,7 @@ const cities = [
       {
         name: "Oriental Pearl TV Tower",
         image:
-          "https://lh6.googleusercontent.com/proxy/i6Iqun0OfhcT1zK_II3p62UHXpSjdrYJJRCYvyWoFtKgozlcZuPW3c7d3Qx5DQmhYBVmw8m-YYugj1w9INQCyNuW2Hwoie1XLbpd0HiVoIdm75H0MA24yd-2RDXaD6F3W_9J7ZFun9bAqo_r2OQ00ZvCJlrzR_gLsvvMCaJEx1-R=w296-h202-n-k-no",
+          "https://upload.wikimedia.org/wikipedia/commons/8/8f/Oriental_Pearl_Radio_%26_TV_Tower_20100507_night.jpg",
         description:
           "The Oriental Pearl Radio & Television Tower is a TV tower in Shanghai. Its location at the tip of Lujiazui in the Pudong New Area by the side of Huangpu River, opposite The Bund, makes it a distinct landmark in the area. Its principal designers were Jiang Huan Chen, Lin Benlin, and Zhang Xiulin. Construction began in 1991, and the tower was completed in 1995. At 468 m high, it was the tallest structure in China from 1994–2007, when it was surpassed by the Shanghai World Financial Center. It is classified as an AAAAA scenic area by the China National Tourism Administration. The tower is brightly lit in different LED sequences at night. On 7 July 2007, Oriental Pearl Tower was host to the Chinese Live Earth concert. The tower features 11 spheres, big and small. The two largest spheres, along the length of the tower, have diameters of 50 m for the lower and 45 m for the upper. They are linked by three columns, each 9 m in diameter. The highest sphere is 14 m in diameter. The entire tower is supported by three enormous columns that start underground.",
         target: "Tourists",
@@ -268,12 +267,12 @@ const cities = [
     timeZone: "KST",
     recommendedSentence: "If you like unique big cities, check these out:",
     recommendedCities: [5, 6, 2],
-    googleMap: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d404811.2671992865!2d126.70936381706494!3d37.56476893071881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca28b61c565cd%3A0x858aedb4e4ea83eb!2sSeoul%2C%20South%20Korea!5e0!3m2!1sen!2skw!4v1594371554505!5m2!1sen!2skw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+    googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d404811.2671992865!2d126.70936381706494!3d37.56476893071881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca28b61c565cd%3A0x858aedb4e4ea83eb!2sSeoul%2C%20South%20Korea!5e0!3m2!1sen!2skw!4v1594371554505!5m2!1sen!2skw",
     attractions: [
       {
         name: "Gyeongbokgung Palace",
         image:
-          "https://lh6.googleusercontent.com/proxy/tObwjonv-zOZBbP4XSjXGcVlvyeGIOji4pev_3oJCt1eO2e1bcRXWYlFw9jQkshebsW0YDSRX-49TnIsbPzggZyBVwFGPZ2M2VXbQ7cZ5FDm4zuMIUvrsYu_jBWhjiPU4xTHRZOyEVILQUAkGmJB8kfbaB__6w_yce8gaH-FOlow=w296-h202-n-k-no",
+          "https://i2.wp.com/www.agoda.com/wp-content/uploads/2019/05/Gyeongbokgung-palace-Seoul-Throne-Hall.jpg",
         description:
           "Gyeongbokgung, also known as Gyeongbokgung Palace or Gyeongbok Palace, was the main royal palace of the Joseon dynasty. Built in 1395, it is located in northern Seoul, South Korea. The largest of the Five Grand Palaces built by the Joseon dynasty, Gyeongbokgung served as the home of Kings of the Joseon dynasty, the Kings' households, as well as the government of Joseon. Gyeongbokgung continued to serve as the main palace of the Joseon dynasty until the premises were destroyed by fire during the Imjin War and abandoned for two centuries. However, in the 19th century, all of the palace's 7,700 rooms were later restored under the leadership of Prince Regent Heungseon during the reign of King Gojong. Some 500 buildings were restored on a site of over 40 hectares. The architectural principles of ancient Korea were incorporated into the tradition and appearance of the Joseon royal court. In the early 20th century, much of the palace was systematically destroyed by Imperial Japan. Since then, the walled palace complex is gradually being restored to its original form. Today, the palace is arguably regarded as being the most beautiful and grandest of all five palaces.",
         target: "Tourists",
@@ -281,7 +280,7 @@ const cities = [
       {
         name: "N Seoul Tower",
         image:
-          "https://lh4.googleusercontent.com/proxy/gezsr1TJSm2R7uTb37l1CGrSjMoOWVaZERneDo-aCMR6pNYwOqm1sZU35_2-qxRUHbkLbMG2pt8XPiOB1RLBXJLOen2ZLbvWyra52dXJd-DgIPyUcitonOoiQUnvkH_1O4ijGzw7-_o6yb16tgTrg-tz90l9ntQngJot0ZUyQUrr=w296-h202-n-k-no",
+          "https://cdn.civitatis.com/corea-del-sur/seul/galeria/torre-comunicaciones-seul.jpg",
         description:
           "The N Seoul Tower, officially the YTN Seoul Tower and commonly known as the Namsan Tower or Seoul Tower, is a communication and observation tower located on Namsan Mountain in central Seoul, South Korea. At 236 metres, it marks the second highest point in Seoul. Built in 1971, the N Seoul Tower is South Korea's first general radio wave tower, providing TV and radio broadcasting in Seoul. Currently, the tower broadcasts signals for Korean media outlets, such as KBS, MBC and SBS.",
         target: "Tourists",
@@ -289,7 +288,7 @@ const cities = [
       {
         name: "Myeong-dong",
         image:
-          "https://lh5.googleusercontent.com/proxy/kxGSOU8bNzWgdqHzPng3JQ5vuOiS3SpZymCJQPaF0bZsmF3GmYfAl-rE2RchLpw_TAypsEH43T-MqAISthNUgvwVlTHdoRGs8Abj499X4z_aQmAMqy8YLPHT-_JRuwIE2E6ZhWgms847qqp3Z0dKgQpaEgTymgFVG1DXeXblRS37=w296-h202-n-k-no",
+          "https://www.gpsmycity.com/img/ctw_cover/420.jpg",
         description:
           "Myeongdong is a dong in Jung-gu, Seoul, South Korea between Chungmu-ro, Eulji-ro, and Namdaemun-ro. It covers 0.99km² with a population of 3,409 and is mostly a commercial area, being one of Seoul's main shopping, parade route and tourism districts. In 2011, 2012 and 2013, Myeong-dong was listed as the ninth most expensive shopping street in the world. The area is known for its two historically significant sites, namely the Myeongdong Cathedral and the Myeongdong Nanta Theatre.",
         target: "Tourists",
@@ -310,7 +309,7 @@ const cities = [
     timeZone: "AST",
     recommendedSentence: "If you like Kuwait City, you may also like:",
     recommendedCities: [3, 1, 4],
-    googleMap: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55628.845954578464!2d47.94684722837268!3d29.376060625233347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9c83ce455983%3A0xc3ebaef5af09b90e!2sKuwait%20City!5e0!3m2!1sen!2skw!4v1594372279423!5m2!1sen!2skw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`,
+    googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55628.845954578464!2d47.94684722837268!3d29.376060625233347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9c83ce455983%3A0xc3ebaef5af09b90e!2sKuwait%20City!5e0!3m2!1sen!2skw!4v1594372279423!5m2!1sen!2skw",
     attractions: [
       {
         name: "Kuwait Towers",
@@ -323,7 +322,7 @@ const cities = [
       {
         name: "Al Hamra Tower",
         image:
-          "https://lh5.googleusercontent.com/p/AF1QipN-jJiSgNFr9byfTQPqzDd6J1X2lbLudZIn2ptX=w296-h202-n-k-no",
+          "https://www.som.com/FILE/14277/alhamra_1400x800_timgriffith_01jpg.jpg",
         description:
           "The Al Hamra Tower is a skyscraper in Kuwait City, Kuwait. It is the tallest building in Kuwait.",
         target: "Tourists",

@@ -9,11 +9,12 @@ import CityDetail from "./Components/CityDetail";
 
 function App() {
   const [city, setCity] = useState(null);
+  const [query, setQuery] = useState("");
 
   return (
     <div>
-      <Title>Hello world!</Title>
-      {city ? <CityDetail city={city} /> : <CityList setCity={setCity} />}
+      <Title>City Guide!</Title>
+      {city ? <CityDetail city={city} /> : <CityList setCity={setCity} setQuery={setQuery} query={query} />}
     </div>
   );
 }
