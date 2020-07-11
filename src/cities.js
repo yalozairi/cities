@@ -2,6 +2,7 @@ const cities = [
   {
     id: 1,
     name: "London",
+    slug: "london",
     nameCountry: "London, England",
     description:
       "London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations. Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.",
@@ -12,6 +13,7 @@ const cities = [
     timeZone: "GMT/BST",
     recommendedSentence: "If you like popular big cities, check these out:",
     recommendedCities: [4, 5, 3],
+    type: "bigCity",
     googleMap:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.6931929206!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2skw!4v1594365969142!5m2!1sen!2skw",
 
@@ -46,6 +48,7 @@ const cities = [
   {
     id: 2,
     name: "Tokyo",
+    slug: "tokyo",
     nameCountry: "Tokyo, Japan",
     description:
       "Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. The Imperial Palace sits amid large public gardens. The city's many museums offer exhibits ranging from classical art (in the Tokyo National Museum) to a reconstructed kabuki theater (in the Edo-Tokyo Museum).",
@@ -57,6 +60,7 @@ const cities = [
     timeZone: "JST",
     recommendedSentence: "If you like unique big cities, check these out:",
     recommendedCities: [6, 7, 5],
+    type: "uniqueCity",
     googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326606.5311178067!2d137.52630650667987!3d35.488469958308755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2skw!4v1594367725185!5m2!1sen!2skw",
     attractions: [
       {
@@ -87,6 +91,7 @@ const cities = [
   {
     id: 3,
     name: "Dubai",
+    slug: "dubai",
     nameCountry: "Dubai, United Arab Emirates",
     description:
       "Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks.",
@@ -97,6 +102,7 @@ const cities = [
     timeZone: "GST",
     recommendedSentence: "If you like popular big cities, check these out:",
     recommendedCities: [4, 5, 1],
+    type: "bigCity",
     googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462565.197581445!2d54.94755498654818!3d25.075085310621684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2skw!4v1594368771843!5m2!1sen!2skw",
     attractions: [
       {
@@ -129,6 +135,7 @@ const cities = [
   {
     id: 4,
     name: "New York City",
+    slug: "new-york-city",
     nameCountry: "New York City, USA",
     description:
       "New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square.",
@@ -139,6 +146,7 @@ const cities = [
     timeZone: "EDT",
     recommendedSentence: "If you like popular big cities, check these out:",
     recommendedCities: [3, 5, 1],
+    type: "bigCity",
     googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2skw!4v1594370061626!5m2!1sen!2skw",
     attractions: [
       {
@@ -170,6 +178,7 @@ const cities = [
   {
     id: 5,
     name: "Hong Kong",
+    slug: "hong-kong",
     nameCountry: "Hong Kong",
     description:
       "Hong Kong, officially the Hong Kong Special Administrative Region of the People's Republic of China, is a metropolitan area and special administrative region of the People's Republic of China on the eastern Pearl River Delta of the South China Sea.",
@@ -181,6 +190,7 @@ const cities = [
     timeZone: "HKT",
     recommendedSentence: "If you like unique big cities, check these out:",
     recommendedCities: [6, 7, 2],
+    type: "bigCity",
     googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472323.8860633225!2d113.8475072266474!3d22.352482475031337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403e2eda332980f%3A0xf08ab3badbeac97c!2sHong%20Kong!5e0!3m2!1sen!2skw!4v1594370478051!5m2!1sen!2skw",
     attractions: [
       {
@@ -213,6 +223,7 @@ const cities = [
   {
     id: 6,
     name: "Shanghai",
+    slug: "shanghai",
     nameCountry: "Shanghai, China",
     description:
       "Shanghai, on China’s central coast, is the country's biggest city and a global financial hub. Its heart is the Bund, a famed waterfront promenade lined with colonial-era buildings. Across the Huangpu River rises the Pudong district’s futuristic skyline, including 632m Shanghai Tower and the Oriental Pearl TV Tower, with distinctive pink spheres. Sprawling Yu Garden has traditional pavilions, towers and ponds.",
@@ -224,6 +235,7 @@ const cities = [
     timeZone: "CST",
     recommendedSentence: "If you like unique big cities, check these out:",
     recommendedCities: [5, 7, 2],
+    type: "uniqueCity",
     googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d873449.7819148405!2d120.91629749245475!3d31.22313380601164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b27040b1f53c33%3A0x295129423c364a1!2sShanghai%2C%20China!5e0!3m2!1sen!2skw!4v1594371203735!5m2!1sen!2skw",
     attractions: [
       {
@@ -256,6 +268,7 @@ const cities = [
   {
     id: 7,
     name: "Seoul",
+    slug: "seoul",
     nameCountry: "Seoul, South Korea",
     description:
       "Seoul, the capital of South Korea, is a huge metropolis where modern skyscrapers, high-tech subways and pop culture meet Buddhist temples, palaces and street markets. Notable attractions include futuristic Dongdaemun Design Plaza, a convention hall with curving architecture and a rooftop park; Gyeongbokgung Palace, which once had more than 7,000 rooms; and Jogyesa Temple, site of ancient locust and pine trees.",
@@ -267,6 +280,7 @@ const cities = [
     timeZone: "KST",
     recommendedSentence: "If you like unique big cities, check these out:",
     recommendedCities: [5, 6, 2],
+    type: "uniqueCity",
     googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d404811.2671992865!2d126.70936381706494!3d37.56476893071881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca28b61c565cd%3A0x858aedb4e4ea83eb!2sSeoul%2C%20South%20Korea!5e0!3m2!1sen!2skw!4v1594371554505!5m2!1sen!2skw",
     attractions: [
       {
@@ -299,6 +313,7 @@ const cities = [
   {
     id: 8,
     name: "Kuwait City",
+    slug: "kuwait-city",
     nameCountry: "Kuwait City, Kuwait",
     description:
       "Kuwait City is the capital of the gulf nation of Kuwait. At its heart sits the Grand Mosque, known for its vast interior and chandeliered dome. On the waterfront, the late-19th-century Seif Palace features a neo-Arabic watchtower and manicured gardens. Nearby, the Kuwait National Museum explores history and features science shows at its planetarium. Souk Al-Mubarakiya is a vast food and handicraft market.",
@@ -309,6 +324,7 @@ const cities = [
     timeZone: "AST",
     recommendedSentence: "If you like Kuwait City, you may also like:",
     recommendedCities: [3, 1, 4],
+    type: "uniqueCity",
     googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55628.845954578464!2d47.94684722837268!3d29.376060625233347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9c83ce455983%3A0xc3ebaef5af09b90e!2sKuwait%20City!5e0!3m2!1sen!2skw!4v1594372279423!5m2!1sen!2skw",
     attractions: [
       {

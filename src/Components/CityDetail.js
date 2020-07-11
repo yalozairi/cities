@@ -1,14 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
+import { useParams, Link } from "react-router-dom";
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+
 // Styles
-import { DetailWrapper } from "../styles";
+import { DetailWrapper, CityWrapper } from "../styles";
 
 //Components
-import Recommendations from "./Recommendations";
+import RecommendationList from "./RecommendationList";
 
-const CityDetail = ({ city }) => {
+const CityDetail = ({ cities }) => {
+const citySlug = useParams().citySlug;
+const city = cities.find((city) => city.slug === citySlug);
+const [recommendations, setRecommendations] = useState(cities);
+
   return (
     <>
       <DetailWrapper>
+        <Link to="/">
+        <button>Back</button>
+        </Link>
+
+        <CopyToClipboard text={window.location.href}>
+        <button>
+          Share</button>
+          </CopyToClipboard>
+
         <h1>{city.nameCountry}</h1>
         <h4>{city.description}</h4>
         <h5>Climate: {city.climate}</h5>
@@ -49,9 +65,10 @@ const CityDetail = ({ city }) => {
       </DetailWrapper>
       <br />
      
-        <DetailWrapper>
-        <Recommendations city={city} />
-        </DetailWrapper>
+        <CityWrapper>
+        <h1>{city.recommendedSentence}</h1>
+        <RecommendationList city={city} recommendations={recommendations} setRecommendations={setRecommendations}/>
+        </CityWrapper>
      
     </>
   );
