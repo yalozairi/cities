@@ -12,6 +12,21 @@ const CityDetail = ({ cities }) => {
   const citySlug = useParams().citySlug;
   const city = cities.find((city) => city.slug === citySlug);
   const [recommendations, setRecommendations] = useState(cities);
+  
+const attractions = city.attractions.map((attract) => {
+    return (
+            <div className="col">
+            <h2>{attract.name}</h2>
+            <h5>{attract.description}</h5>
+            <img
+              src={attract.image}
+              alt={attract.name}
+            />
+            </div>
+)}
+)
+
+
 
   return (
     <>
@@ -37,49 +52,36 @@ const CityDetail = ({ cities }) => {
           <h5>Climate: {city.climate}</h5>
           <h5>Population: {city.population}</h5>
           <h5>Time zone: {city.timeZone}</h5>
-          <img src={city.image} alt={city.name} style={{ margin: "auto" }} />
         </div>
-        <div style={{ float: "right" }}>
+
+          <div className="container">
+          <div className="row">
+          <div className="col">
+          <img src={city.image} alt={city.name}/>
+          </div>
+          <div className="col">
           <iframe
             src={city.googleMap}
             width={450}
             height={337.5}
             title={"Map"}
             frameborder={0}
-            style={{ border: "0" }}
+            style={{ border: "0"}}
             allowfullscreen=""
             ariaHidden={false}
             tabindex={0}
             alt={city.name}
           ></iframe>
-        </div>
+          </div>
+          </div>
+          </div>
         <div style={{ clear: "both" }}></div>
         <div className="row">
-          <h1>These are the top three {city.name} attractions!</h1>
-          <div className="col">
-            <h2>{city.attractions[0].name}</h2>
-            <h5>{city.attractions[0].description}</h5>
-            <img
-              src={city.attractions[0].image}
-              alt={city.attractions[0].name}
-            />
-          </div>
-          <div className="col">
-            <h2>{city.attractions[1].name}</h2>
-            <h5>{city.attractions[1].description}</h5>
-            <img
-              src={city.attractions[1].image}
-              alt={city.attractions[1].name}
-            />
-          </div>
-          <div className="col">
-            <h2>{city.attractions[2].name}</h2>
-            <h5>{city.attractions[2].description}</h5>
-            <img
-              src={city.attractions[2].image}
-              alt={city.attractions[2].name}
-            />
-          </div>
+          <h1 style={{textAlign: "center"}}>These are the top three {city.name} attractions!</h1>
+          <div className="row">
+
+{attractions}
+</div>
         </div>
       </DetailWrapper>
       <br />
