@@ -17,18 +17,16 @@ function App() {
 
   return (
     <div>
-    <Title>City Guide!</Title>
-    <Switch>
-    
-    <Route exact path="/cities/:citySlug">
-    <CityDetail cities={cities} _city={city}/>
-    </Route>
+      <Title>City Guide!</Title>
+      <Switch>
+        <Route exact path="/cities/:citySlug">
+          <CityDetail cities={cities} _city={city} />
+        </Route>
 
-    <Route path="/">
-    <CityList setCity={setCity} setQuery={setQuery} query={query} />
-    </Route>
-    
-    </Switch>
+        <Route path="/">
+          <CityList setCity={setCity} setQuery={setQuery} query={query} />
+        </Route>
+      </Switch>
     </div>
   );
 }

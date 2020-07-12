@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const Title = styled.h1`
   text-align: center;
+  margin-top: 25px;
 `;
 
 export const CityWrapper = styled.div`
@@ -12,7 +13,7 @@ export const CityWrapper = styled.div`
     width: 20%;
 
     :hover {
-      cursor: pointer
+      cursor: pointer;
     }
   }
   p {
@@ -32,7 +33,6 @@ export const DetailWrapper = styled.div`
   margin-right: auto;
   width: 80%;
 
-
   img {
     width: 40%;
     float: left;
@@ -41,7 +41,7 @@ export const DetailWrapper = styled.div`
   p {
     vertical-align: middle;
   }
-`
+`;
 
 export const SearchBarStyled = styled.input`
   padding: 0.5rem;

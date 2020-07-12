@@ -1,18 +1,14 @@
 import React from "react";
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-//data
-import cities from "../cities";
-
-const RecommendationItem = ({city, setRecommendations}) => {
-
- return (
-    <>
-  <h1>{city.name}</h1>
-  <Link to={`/cities/${city.slug}`} >
-  <img src={city.image} alt={city.name}/>
-  </Link>
-    </>
+const RecommendationItem = ({ city, setRecommendations }) => {
+  return (
+    <div className="col">
+      <h2 style={{ textAlign: "center" }}>{city.name}</h2>
+      <Link to={`/cities/${city.slug}`}>
+        <img src={city.image} alt={city.name} />
+      </Link>
+    </div>
   );
 };
 export default RecommendationItem;

@@ -5,14 +5,17 @@ import RecommendationItem from "./RecommendationItem";
 // import {CityWrapper} from "../styles"
 
 const RecommendationList = ({ city, recommendations, setRecommendations }) => {
+  const recommendationList = recommendations
+    .filter((cityRec) => cityRec.type === city.type && cityRec.id !== city.id)
+    .map((_cityRec) => (
+      <RecommendationItem
+        city={_cityRec}
+        key={city.name}
+        setRecommendations={setRecommendations}
+      />
+    ));
 
-  const recommendationList = recommendations.filter((cityRec) => cityRec.type === city.type && cityRec.id !== city.id).map((_cityRec) => <RecommendationItem city={_cityRec} key={city.name} setRecommendations={setRecommendations}/>)
-  
-  return (
-    <>
-    {recommendationList}
-    </>
-  );
+  return <div className="row">{recommendationList}</div>;
 };
 
 export default RecommendationList;
